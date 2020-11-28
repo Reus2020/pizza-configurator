@@ -1,10 +1,9 @@
+import Configurator from "./Configurator";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        <h3>Artem-Pizza App</h3>
-      </p>
+        <Configurator />
     </div>
   );
 }
