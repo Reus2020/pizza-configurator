@@ -7,7 +7,7 @@ import {useState} from 'react'
 // import PIZZA_SAUСE from './pizzaData';
 import ConfiguratorBlock from './ConfiguratorBlock';
 
-function Configurator(){
+const Configurator=()=>{
     const PIZZA_SIZES=['25 см.','30 см.'];
     const PIZZA_DOUGH=['пышное','тонкое']; 
     const PIZZA_SAUСE=['томатный', 'белый', 'острый'];
@@ -23,28 +23,22 @@ function Configurator(){
     const[meat, setMeat] = useState(PIZZA_MEAT[0]);
 
     const updateSize =(event) =>{
-        event.preventDefault();
         console.log('size: ', event.target.value)
         setSize(event.target.value)
     }
     const updateDough =(event) =>{
-        event.preventDefault();
         setDough(event.target.value);
     }
     const updateSauce =(event) =>{
-        event.preventDefault();
         setSauce(event.target.value);
     }
     const updateCheese =(event) =>{
-        event.preventDefault();
         setCheese(event.target.value);
     }
     const updateVegetables =(event) =>{
-        event.preventDefault();
         setVegetables(event.target.value);
     }
     const updateMeat =(event) =>{
-        event.preventDefault();
         setMeat(event.target.value);
     }
     return(
